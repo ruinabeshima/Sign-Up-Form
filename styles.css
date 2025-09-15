@@ -1,11 +1,86 @@
 * {
   margin: 0; 
   padding: 0; 
-  box-sizing: border-box; 
-  border: 1px solid red; 
+  box-sizing: border-box;  
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
   width: 100vw; 
   height: 100vh; 
+  display: flex; 
+}
+
+.page-image {
+  width: 40%; 
+  height: 100%; 
+}
+
+.page-text {
+  width: 60%; 
+  height: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+#background-image {
+  width: 100%; 
+  height: 100%;  
+}
+
+.image-title {
+  position: absolute;  
+  width: 40%; 
+  background: #949ca8;
+  background: linear-gradient(90deg,rgba(148, 156, 168, 1) 100%, rgba(85, 135, 106, 1) 100%, rgba(113, 203, 124, 1) 59%, rgba(237, 221, 83, 1) 100%);
+  opacity: 50%; 
+  padding: 1rem; 
+  top: 15rem; 
+  text-align: center; 
+}
+
+span {
+  font-style: italic; 
+}
+
+.text-container {
+  margin-left: 1rem; 
+  margin-right: 1rem; 
+}
+
+.heading-text {
+  margin-top: 1rem; 
+  font-weight: bold;  
+}
+
+form {
+  margin-top: 2rem; 
+  margin-bottom: 2rem; 
+  border: 1px solid black; 
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 30rem; 
+  gap: 1rem; 
+  padding-top: 1rem; 
+  padding-bottom: 1rem; 
+}
+
+label {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  color: grey; 
+  letter-spacing: 0.25rem;   
+}
+
+input {
+  width: 10rem; 
+}
+
+form > div {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
 }

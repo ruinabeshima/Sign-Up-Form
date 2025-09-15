@@ -44,27 +44,35 @@ span {
   font-style: italic; 
 }
 
-.text-container {
-  margin-left: 1rem; 
-  margin-right: 1rem; 
-}
-
 .heading-text {
   margin-top: 1rem; 
   font-weight: bold;  
+  margin-left: 1rem; 
+  margin-right: 1rem; 
 }
 
 form {
   margin-top: 2rem; 
   margin-bottom: 2rem; 
-  border: 1px solid black; 
-  display: grid; 
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  width: 30rem; 
-  gap: 1rem; 
   padding-top: 1rem; 
   padding-bottom: 1rem; 
+  display: flex;  
+  flex-direction: column; 
+  width: 100%; 
+  box-shadow: 2px 2px 7px 1px rgb(157, 96, 66);
+}
+
+.flex-container {
+  display: flex; 
+  justify-content: center; 
+  padding-left: 1rem; 
+}
+
+.flex-container > div {
+  display: flex; 
+  flex-direction: column;
+  width: 50%; 
+  margin-bottom: 0.75rem; 
 }
 
 label {
@@ -75,12 +83,45 @@ label {
 }
 
 input {
+  border: 1px solid grey; 
+  border-radius: 2px; 
+  padding: 0.15rem; 
   width: 10rem; 
 }
 
-form > div {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center; 
+input:active {
+  border: 1px solid grey; 
+}
+
+#create-account {
+  padding-right: 1rem; 
+  padding-left: 1rem; 
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
+  border: none; 
+  background-color: rgb(157, 96, 66);
+  color: white; 
+  border-radius: 0.25rem; 
+  margin-left: 1rem; 
+  margin-right: 1rem; 
+}
+
+#create-account:hover {
+  background-color: rgb(179, 109, 75);
+  cursor: pointer; 
+}
+
+.log-in-text {
+  margin-top: 1rem; 
+  margin-left: 1rem; 
+  margin-right: 1rem; 
+}
+
+.log-in-text > a {
+  text-decoration: none; 
+  color: rgb(157, 96, 66);
+}
+
+#password, #confirm-password {
+  border: 2px solid rgb(255, 115, 0); 
 }
